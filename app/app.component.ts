@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
-
-import { TabsPage } from '../pages/tabs/tabs';
+import { MenuPage } from '../pages/menu/menu';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = TabsPage;
+  rootPage:any = MenuPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {

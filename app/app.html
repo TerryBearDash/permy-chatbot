@@ -1,1 +1,38 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu side="left" [content]="mainContent">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Menu
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content id="side-menu21">
+    <ion-list id="menu-list5">
+      <ion-item color="none" menuClose="" (click)="goToTabs()" id="menu-list-item1">
+        <ion-icon name="desktop" item-left></ion-icon>
+        Dashboard
+      </ion-item>
+      <ion-item color="none" menuClose="" (click)="goToTabs()" id="menu-list-item2">
+        <ion-icon name="paper" item-left></ion-icon>
+        Important Numbers
+      </ion-item>
+      <ion-item color="none" menuClose="" (click)="goToTabs()" id="menu-list-item3">
+        <ion-icon name="folder" item-left></ion-icon>
+        Library
+      </ion-item>
+      <ion-item color="none" menuClose="" (click)="goToTabs()" id="menu-list-item5">
+        <ion-icon name="notifications" item-left></ion-icon>
+        Feed
+      </ion-item>
+      <ion-item color="none" menuClose="" (click)="goToTabs()" id="menu-list-item7">
+        <ion-icon name="options" item-left></ion-icon>
+        Settings
+      </ion-item>
+    </ion-list>
+    <button id="menu-button6" ion-button color="positive" (click)="logout()" block style="text-align:left;border-radius:0px 0px 0px 0px;">
+      Logout
+    </button>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>
